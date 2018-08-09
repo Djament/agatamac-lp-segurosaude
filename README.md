@@ -63,7 +63,7 @@ O projeto faz uso de tecnologias básicas, visando melhor performance do código
 
 ##### Organização dos Arquivos
 
-Arquivo class.smtp.php não acessível. Links referentes aos arquivos no [GitHub].
+Links referentes aos arquivos no [GitHub].
 
 | Pasta | Arquivo |
 | ------ | ------ |
@@ -74,7 +74,7 @@ Arquivo class.smtp.php não acessível. Links referentes aos arquivos no [GitHub
 | /assets | [**- ASSETS**][assets]|
 | assets/class | [**-- PHPMAILER**][class] |
 | assets/class | [class.phpmailer.php][phpmailer] |
-| assets/class | smtp.phpmailer.php |
+| assets/class | [smtp.phpmailer.php][smtp] |
 | /assets/css | [**-- CSS**][css] |
 | /assets/css | [style.css][style] |
 | /assets/css | [style.min.css][cssmin] |
@@ -110,6 +110,7 @@ Arquivo class.smtp.php não acessível. Links referentes aos arquivos no [GitHub
    [assets]: <https://github.com/Djament/agatamac-lp-segurosaude/tree/master/assets>
    [class]: <https://github.com/Djament/agatamac-lp-segurosaude/tree/master/assets/class>
    [phpmailer]: <https://github.com/Djament/agatamac-lp-segurosaude/blob/master/assets/class/class.phpmailer.php>
+   [smtp]: <https://github.com/Djament/agatamac-lp-segurosaude/blob/master/assets/class/class.smtp.php>
    [css]: <https://github.com/Djament/agatamac-lp-segurosaude/tree/master/assets/css>
    [style]: <https://github.com/Djament/agatamac-lp-segurosaude/blob/master/assets/css/style.css>
    [cssmin]: <https://github.com/Djament/agatamac-lp-segurosaude/blob/master/assets/css/style.min.css>

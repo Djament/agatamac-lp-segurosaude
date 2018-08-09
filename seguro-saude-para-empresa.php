@@ -14,7 +14,7 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "url": "https://agatamacsaude.com.br",
-        "logo": "img/logo.png",
+        "logo": "https://agatamacsaude.com.br/img/common/logo.png",
         "description": "Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH",
         "additionalType": "http://www.productontology.org/doc/Health_insurance_companies",
         "telephone" : "+55-11-4302-6044",
@@ -37,23 +37,23 @@
       }
     </script>
 	<!-- META DATA OG -->
-    <meta property="og:site_name" content="Agata Mac - Seguro de Saúde para Empresas">
+    <meta property="og:site_name" content="Agata Mac | Seguro Saúde para Empresas">
     <meta property="og:title" content="Agata Mac Saúde">
     <meta property="og:description" content="Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH">
     <meta property="og:url" content="https://agatamacsaude.com.br">
     <meta property="og:locale" content="pt-BR">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image" content="https://agatamacsaude.com.br/img/common/logo.png">
     <meta property="og:image:alt" content="Agata Mac Seguro Saúde para Empresas">
-    <meta property="og:image:url" content="img/logo.png">
+    <meta property="og:image:url" content="https://agatamacsaude.com.br/img/common/logo.png">
     <meta property="og:image:type" content="img/png">
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/img/common/logo.png">
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="196x196" href="img/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/img/common/logo.png">
 	<!-- META DATA -->
 	<meta name="title" content="Agata Mac | Seguro de Saúde para Empresas">
 	<meta name="author" content="Djament Comunicação">
@@ -68,14 +68,14 @@
 	<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 	<!-- INÍCIO DOBRA 1 -->
 	<header id="segurosaude-topo" class="container-fluid">
 		<section class="row">
 			<article class="col-12">
-				<img src="img/logo.png" alt="Agata Mac Saúde - Seguro Saúde PJ" title="Agata Mac Saúde | Especialista em Seguro Saúde para Empresas" width="90px" height="auto">
+				<img src="assets/img/common/logo.png" alt="Agata Mac Saúde - Seguro Saúde PJ" title="Agata Mac Saúde | Especialista em Seguro Saúde para Empresas" width="90px" height="auto">
 				<h2 id="agatamac">Agata Mac</h2>
 				<h1>Especialistas em<br/><strong>Seguro Saúde para Empresas</strong></h1>
 				<a title="Solicitar cotação de Seguro Saúde para sua empresa" rel="next" hreflang="pt" target="_self" href="#cotacao"><button>Solicitar Cotação</button></a>
@@ -112,31 +112,31 @@
 			<article id="seguradoras" class="col-12">
 				<h2>Nossas Seguradoras</h2>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/allianz.jpg" alt="Seguradora Conveniada Allianz">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/allianz.jpg" alt="Seguradora Conveniada Allianz">
 					</div>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/amil.jpg" alt="Seguradora Conveniada Amil">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/amil.jpg" alt="Seguradora Conveniada Amil">
 					</div>
 					<br/ class="mobile-only">
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/bradesco.png" alt="Seguradora Conveniada Bradesco">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/bradesco.png" alt="Seguradora Conveniada Bradesco">
 					</div>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/notredame.png" alt="Seguradora Conveniada Notre Dame">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/notredame.png" alt="Seguradora Conveniada Notre Dame">
 					</div>
 					<br/>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/onehealth.jpg" alt="Seguradora Conveniada One Health">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/onehealth.jpg" alt="Seguradora Conveniada One Health">
 					</div>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/portoseguro.jpg" alt="Seguradora Conveniada Porto Seguro">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/portoseguro.jpg" alt="Seguradora Conveniada Porto Seguro">
 					</div>
 					<br/ class="mobile-only">
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/sompo.png" alt="Seguradora Conveniada Sompo">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/sompo.png" alt="Seguradora Conveniada Sompo">
 					</div>
 					<div class="seguradoras" class="col-6 col-md-1">
-						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="seguradoras/sulamerica.jpg" alt="Seguradora Conveniada SulAmérica">
+						<img title="Seguradora de Saúde para Empresas operada pela Agata Mac Saúde" src="assets/img/seguradoras/sulamerica.jpg" alt="Seguradora Conveniada SulAmérica">
 					</div>
 					<br/>
 			</article>
@@ -147,7 +147,7 @@
 		<section id="cotacao" class="row">
 			<article class="col-12">
 				<h5>Preencha o formulário a seguir:</h5>
-				<form action="seguro-saude-pj-obrigado" method="post">
+				<form action="mensagem-enviada" method="post">
 					<label for="nome">Nome do Contato*: </label><br/>
 					<input type="text" id="nome" name="nome" required placeholder=" Insira o nome do responsável">
 					<br/>

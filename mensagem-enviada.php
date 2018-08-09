@@ -10,7 +10,7 @@
 	<?php
 		 
 		// Inclui o arquivo class.phpmailer.php localizado na pasta class
-		require_once("class/class.phpmailer.php");
+		require_once("assets/class/class.phpmailer.php");
 		 
 		// Inicia a classe PHPMailer
 		$mail = new PHPMailer(true);
@@ -88,7 +88,7 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "url": "https://agatamacsaude.com.br",
-        "logo": "img/logo.png",
+        "logo": "https://agatamacsaude.com.br/img/common/logo.png",
         "description": "Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH",
         "additionalType": "http://www.productontology.org/doc/Health_insurance_companies",
         "telephone" : "+55-11-4302-6044",
@@ -111,25 +111,25 @@
       }
     </script>
 	<!-- META DATA OG -->
-    <meta property="og:site_name" content="Agata Mac - Seguro de Saúde para Empresas">
+    <meta property="og:site_name" content="Agata Mac | Seguro Saúde para Empresas">
     <meta property="og:title" content="Agata Mac Saúde">
     <meta property="og:description" content="Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH">
     <meta property="og:url" content="https://agatamacsaude.com.br">
     <meta property="og:locale" content="pt-BR">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/logo.png">
+    <meta property="og:image" content="https://agatamacsaude.com.br/img/common/logo.png">
     <meta property="og:image:alt" content="Agata Mac Seguro Saúde para Empresas">
-    <meta property="og:image:url" content="img/logo.png">
+    <meta property="og:image:url" content="https://agatamacsaude.com.br/img/common/logo.png">
     <meta property="og:image:type" content="img/png">
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-    <link rel="apple-touch-icon" href="img/logo.png">
+    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/img/common/logo.png">
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="196x196" href="img/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/img/common/logo.png">
 	<!-- META DATA -->
-	<meta name="title" content="Agata Mac | Seguros de Saúde para Empresas | Mensagem Enviada">
+	<meta name="title" content="Agata Mac | Seguros Saúde para Empresas | Mensagem Enviada">
 	<meta name="author" content="Djament Comunicação">
 	<meta name="description" content="Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH">
 	<meta name="keywords" content="plano de saúde para empresa, seguro de saúde para empresa, seguro saúde pj, plano de saúde corporativo, seguros para empresa, consultoria em seguros">
@@ -142,13 +142,13 @@
 	<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body id="bodyobrigado" class="container-fluid">
 	<main id="obrigado" class="row">
 		<section id="obrigado-topo" class="col-12">
 			<article>
-				<img src="img/logo.png" alt="Agata Mac Saúde - Seguro Saúde PJ" title="Agata Mac Saúde | Especialista em Seguro Saúde para Empresas" width="60px" height="auto">
+				<img src="assets/img/common/logo.png" alt="Agata Mac Saúde - Seguro Saúde PJ" title="Agata Mac Saúde | Especialista em Seguro Saúde para Empresas" width="60px" height="auto">
 				<h2 id="agatamac">Agata Mac</h2>
 			</article>
 		</section>

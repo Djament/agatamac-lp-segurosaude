@@ -1,3 +1,12 @@
+/*
+* Site: Agata Mac Saúde | Seguro Saúde para Empresas
+* Cliente: Agata Mac Saúde
+* Projeto: Landing Page Seguro Saúde
+* Autoria: Djament Comunicação / Marcelo Diament
+* Versão: 0.0.1
+* Desenvolvido em: Agosto de 2018
+* Contato: contato@djament.com.br
+*/
 /* RESETS */
 *{
 	scroll-behavior: smooth;
@@ -106,7 +115,7 @@ header#segurosaude-topo{
 	color: #000;
 	font-family: 'Anton', serif;
 	text-align: center;
-	background-image: url('img/topo.jpg');
+	background-image: url('assets/img/common/topo.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -154,7 +163,7 @@ section{
 	width: 100vw;
 	color: #000;
 	text-align: center;
-	background-image: url('img/bg.png');
+	background-image: url('assets/img/common/bg.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 	 padding: 0;
@@ -203,7 +212,7 @@ section{
 	width: 100vw;
 	color: #000;
 	text-align: center;
-	background-image: url('img/bg.png');
+	background-image: url('assets/img/common/bg.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -504,7 +513,7 @@ main#obrigado section{
 main#obrigado section#obrigado-topo{
 	color: #000;
 	text-align: center;
-	background-image: url('img/bg.png');
+	background-image: url('assets/img/common/bg.png');
 	background-repeat: repeat;
 	background-attachment: fixed;
 }

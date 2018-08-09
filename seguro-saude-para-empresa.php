@@ -14,7 +14,7 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "url": "https://agatamacsaude.com.br",
-        "logo": "https://agatamacsaude.com.br/img/common/logo.png",
+        "logo": "https://agatamacsaude.com.br/assets/img/common/logo.png",
         "description": "Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH",
         "additionalType": "http://www.productontology.org/doc/Health_insurance_companies",
         "telephone" : "+55-11-4302-6044",
@@ -43,17 +43,17 @@
     <meta property="og:url" content="https://agatamacsaude.com.br">
     <meta property="og:locale" content="pt-BR">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://agatamacsaude.com.br/img/common/logo.png">
+    <meta property="og:image" content="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <meta property="og:image:alt" content="Agata Mac Seguro Saúde para Empresas">
-    <meta property="og:image:url" content="https://agatamacsaude.com.br/img/common/logo.png">
+    <meta property="og:image:url" content="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <meta property="og:image:type" content="img/png">
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/img/common/logo.png">
+    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/img/common/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/assets/img/common/logo.png">
 	<!-- META DATA -->
 	<meta name="title" content="Agata Mac | Seguro de Saúde para Empresas">
 	<meta name="author" content="Djament Comunicação">
@@ -68,7 +68,7 @@
 	<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
 	<!-- INÍCIO DOBRA 1 -->

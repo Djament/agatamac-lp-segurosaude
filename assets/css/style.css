@@ -115,7 +115,7 @@ header#segurosaude-topo{
 	color: #000;
 	font-family: 'Anton', serif;
 	text-align: center;
-	background-image: url('assets/img/common/topo.jpg');
+	background-image: url(https://agatamacsaude.com.br/assets/img/common/topo.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -163,7 +163,7 @@ section{
 	width: 100vw;
 	color: #000;
 	text-align: center;
-	background-image: url('assets/img/common/bg.png');
+	background-image: url(https://agatamacsaude.com.br/assets/img/common/bg.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 	 padding: 0;
@@ -212,7 +212,7 @@ section{
 	width: 100vw;
 	color: #000;
 	text-align: center;
-	background-image: url('assets/img/common/bg.png');
+	background-image: url(https://agatamacsaude.com.br/assets/img/common/bg.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
@@ -513,7 +513,7 @@ main#obrigado section{
 main#obrigado section#obrigado-topo{
 	color: #000;
 	text-align: center;
-	background-image: url('assets/img/common/bg.png');
+	background-image: url(https://agatamacsaude.com.br/assets/img/common/bg.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 }

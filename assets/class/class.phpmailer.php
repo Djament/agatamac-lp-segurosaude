@@ -1844,30 +1844,54 @@ class PHPMailer {
    * @access public
    * @return string
    */
-  public function EncodeQ($str, $position = 'text') {
-    // There should not be any EOL in the string
-    $encoded = preg_replace('/[\r\n]*/', '', $str);
+  // #### INÍCIO DO TRECHO ORIGINAL QUE GERAVA ERRO
+  // public function EncodeQ($str, $position = 'text') {
+  //   // There should not be any EOL in the string
+  //   $encoded = preg_replace('/[\r\n]*/', '', $str);
 
-    switch (strtolower($position)) {
-      case 'phrase':
-        $encoded = preg_replace("/([^A-Za-z0-9!*+\/ -])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
-        break;
-      case 'comment':
-        $encoded = preg_replace("/([\(\)\"])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
-      case 'text':
-      default:
-        // Replace every high ascii, control =, ? and _ characters
-        //TODO using /e (equivalent to eval()) is probably not a good idea
-        $encoded = preg_replace_callback('/([\000-\011\013\014\016-\037\075\077\137\177-\377])/',
-                                "'='.sprintf('%02X', ord(stripslashes('\\1')))", $encoded);
-        break;
-    }
+  //   switch (strtolower($position)) {
+  //     case 'phrase':
+  //       $encoded = preg_replace("/([^A-Za-z0-9!*+\/ -])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
+  //       break;
+  //     case 'comment':
+  //       $encoded = preg_replace("/([\(\)\"])/e", "'='.sprintf('%02X', ord('\\1'))", $encoded);
+  //     case 'text':
+  //     default:
+  //       // Replace every high ascii, control =, ? and _ characters
+  //       //TODO using /e (equivalent to eval()) is probably not a good idea
+  //       $encoded = preg_replace('/([\000-\011\013\014\016-\037\075\077\137\177-\377])/e',
+  //                               "'='.sprintf('%02X', ord(stripslashes('\\1')))", $encoded);
+  //       break;
+  //   }
 
-    // Replace every spaces to _ (more readable than =20)
-    $encoded = str_replace(' ', '_', $encoded);
+  //   // Replace every spaces to _ (more readable than =20)
+  //   $encoded = str_replace(' ', '_', $encoded);
 
-    return $encoded;
+  //   return $encoded;
+  // }
+  // #### FIM DO TRECHO ORIGINAL QUE GERAVA ERRO
+  // #### INÍCIO DA CORREÇÃO
+  public function EncodeQ ($str, $position = 'text') {
+  // There should not be any EOL in the string
+  $encoded = preg_replace('/[\r\n]*/', '', $str);
+  switch (strtolower($position)) {
+  case 'phrase':
+  $encoded = preg_replace_callback("|([^A-Za-z0-9!*+\/ -])|", function($found){ return strtolower($found[1]);}, $encoded);
+  break;
+  case 'comment':
+  $encoded = preg_replace_callback("/([\(\)\"])/", function($found){ return strtolower($found[1]);}, $encoded);
+  case 'text':
+  default:
+  // Replace every high ascii, control =, ? and _ characters
+  //TODO using /e (equivalent to eval()) is probably not a good idea
+  $encoded = preg_replace_callback('|([\000-\011\013\014\016-\037\075\077\137\177-\377])|', function($found){ return strtolower($found[1]);}, $encoded);
+  break;
   }
+  // Replace every spaces to _ (more readable than =20)
+  $encoded = str_replace(' ', '_', $encoded);
+  return $encoded;
+   }
+  // #### FIM DA CORREÇÃO
 
   /**
    * Adds a string or binary attachment (non-filesystem) to the list.

@@ -25,25 +25,26 @@
 		$telefone = $_POST['tel'];
 		$formacontato = $_POST['contatar'];
 		$mensagem = $_POST['msg'];
-		$data = date('d-m-Y');
+		date_default_timezone_set('America/Sao_Paulo');
+		$data = date('d/m/Y h:i:s a', time());
 
 		try {
 		     $mail->Host = 'smtp.djament.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
 		     $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
 		     $mail->Port       = 587; //  Usar 587 porta SMTP
-		     $mail->Username = 'contato@djament.com.br'; // Usuário do servidor SMTP (endereço de email)
-		     $mail->Password = 'MDdm290787*'; // Senha do servidor SMTP (senha do email usado)
+		     $mail->Username = 'EMAIL'; // Usuário do servidor SMTP (endereço de email)
+		     $mail->Password = 'SENHA'; // Senha do servidor SMTP (senha do email usado)
 		 
 		     //Define o remetente
 		     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-		     $mail->SetFrom('contato@djament.com.br', 'Djament'); //Seu e-mail
-		     $mail->AddReplyTo('contato@djament.com.br', 'Djament'); //Seu e-mail
+		     $mail->SetFrom('EMAIL', 'Djament'); //Seu e-mail
+		     $mail->AddReplyTo('EMAIL', 'Djament'); //Seu e-mail
 		     $mail->Subject = 'Contato da empresa '.$empresa.' em '.$data;//Assunto do e-mail
 		 
 		 
 		     //Define os destinatário(s)
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		     $mail->AddAddress('marcelo@djament.com.br', 'Marcelo Diament');
+		     $mail->AddAddress('EMAIL', 'Marcelo Diament');
 		 
 		     //Campos abaixo são opcionais 
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -77,7 +78,7 @@
 		 
 		    //caso apresente algum erro é apresentado abaixo com essa exceção.
 		    }catch (phpmailerException $e) {
-		      echo $e->errorMessage(); //Mensagem de erro costumizada do PHPMailer
+		      //echo $e->errorMessage(); //Mensagem de erro costumizada do PHPMailer
 		}
 	?>
 	<!-- FIM ENVIO DE EMAIL -->
@@ -88,7 +89,7 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "url": "https://agatamacsaude.com.br",
-        "logo": "https://agatamacsaude.com.br/img/common/logo.png",
+        "logo": "https://agatamacsaude.com.br/assets/img/common/logo.png",
         "description": "Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH",
         "additionalType": "http://www.productontology.org/doc/Health_insurance_companies",
         "telephone" : "+55-11-4302-6044",
@@ -117,17 +118,17 @@
     <meta property="og:url" content="https://agatamacsaude.com.br">
     <meta property="og:locale" content="pt-BR">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://agatamacsaude.com.br/img/common/logo.png">
+    <meta property="og:image" content="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <meta property="og:image:alt" content="Agata Mac Seguro Saúde para Empresas">
-    <meta property="og:image:url" content="https://agatamacsaude.com.br/img/common/logo.png">
+    <meta property="og:image:url" content="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <meta property="og:image:type" content="img/png">
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/img/common/logo.png">
+    <link rel="apple-touch-icon" href="https://agatamacsaude.com.br/assets/img/common/logo.png">
     <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/img/common/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/assets/img/common/logo.png">
 	<!-- META DATA -->
 	<meta name="title" content="Agata Mac | Seguros Saúde para Empresas | Mensagem Enviada">
 	<meta name="author" content="Djament Comunicação">
@@ -142,7 +143,7 @@
 	<script defer="defer" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body id="bodyobrigado" class="container-fluid">
 	<main id="obrigado" class="row">

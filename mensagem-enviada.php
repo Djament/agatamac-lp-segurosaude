@@ -6,6 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<!-- INÍCIO ENVIO DE EMAIL -->
 	<?php
 		 
@@ -27,9 +28,11 @@
 		$mensagem = $_POST['msg'];
 		date_default_timezone_set('America/Sao_Paulo');
 		$data = date('d/m/Y h:i:s a', time());
+		$assunto = 'Contato da empresa ' . $empresa . ' em '. $data;
+		$assunto = '=?UTF-8?B?'.base64_encode($assunto).'?=';
 
 		try {
-		     $mail->Host = 'smtp.djament.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
+		     $mail->Host = 'smtp.DOMÍNIO.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
 		     $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
 		     $mail->Port       = 587; //  Usar 587 porta SMTP
 		     $mail->Username = 'EMAIL'; // Usuário do servidor SMTP (endereço de email)
@@ -37,19 +40,22 @@
 		 
 		     //Define o remetente
 		     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-		     $mail->SetFrom('EMAIL', 'Djament'); //Seu e-mail
-		     $mail->AddReplyTo('EMAIL', 'Djament'); //Seu e-mail
-		     $mail->Subject = 'Contato da empresa '.$empresa.' em '.$data;//Assunto do e-mail
+		     $mail->SetFrom('EMAIL', 'Agata Mac'); //Seu e-mail
+		     $mail->AddReplyTo('EMAIL', 'Agata Mac'); //Seu e-mail
+		     $mail->Subject = $assunto;//Assunto do e-mail
 		 
 		 
 		     //Define os destinatário(s)
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		     $mail->AddAddress('EMAIL', 'Marcelo Diament');
+		     //$mail->AddAddress('EMAIL', 'Agata Mac');
+		     //$mail->AddAddress('EMAIL');
 		 
 		     //Campos abaixo são opcionais 
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		     //$mail->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
-		     //$mail->AddBCC('destinatario_oculto@dominio.com.br', 'Destinatario2`'); // Cópia Oculta
+		     $mail->AddCC('EMAIL', 'Marcelo Diament'); // Copia
+		     //$mail->AddCC('EMAIL', 'NOME'); // Copia
+		     //$mail->AddBCC('EMAIL', 'NOME'); // Cópia Oculta
 		     //$mail->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 		 
 		 	$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
@@ -83,6 +89,15 @@
 	?>
 	<!-- FIM ENVIO DE EMAIL -->
 	<title>Mensagem Enviada</title>
+	<!-- GOOGLE TAG MANAGER E GOOGLE ANALYTICS -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228703-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122228703-1');
+	</script>
 	<!-- SCHEMA.ORG -->
 	<script type="application/ld+json">
       {
@@ -144,6 +159,7 @@
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/favicon-agata-mac-32.ico">
 </head>
 <body id="bodyobrigado" class="container-fluid">
 	<main id="obrigado" class="row">

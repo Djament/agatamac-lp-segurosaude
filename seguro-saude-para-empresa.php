@@ -6,6 +6,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122228703-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122228703-1');
+	</script>
 	<meta height="device-height">
 	<title>Seguro Saúde para Empresas</title>
 	<!-- SCHEMA.ORG -->
@@ -69,6 +78,7 @@
 	<link defer="defer" href="https://fonts.googleapis.com/css?family=Anton|Poiret+One|Raleway|Marcellus" rel="stylesheet">
 	<link defer="defer" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="shortcut icon" sizes="196x196" href="https://agatamacsaude.com.br/favicon-agata-mac-32.ico">
 </head>
 <body>
 	<!-- INÍCIO DOBRA 1 -->
@@ -147,7 +157,7 @@
 		<section id="cotacao" class="row">
 			<article class="col-12">
 				<h5>Preencha o formulário a seguir:</h5>
-				<form action="mensagem-enviada" method="post">
+				<form action="mensagem-enviada.php" method="post">
 					<label for="nome">Nome do Contato*: </label><br/>
 					<input type="text" id="nome" name="nome" required placeholder=" Insira o nome do responsável">
 					<br/>
@@ -163,7 +173,7 @@
 					<label for="contatar">Como prefere ser contatado?</label><br/>
 					<span class="clearfix"></span>
 					<fieldset>
-						<input type="radio" name="contatar" value="telefone" checked><p> Telefone</p>
+						<input type="radio" name="contatar" value="telefone"><p> Telefone</p>
 	  					<input type="radio" name="contatar" value="email"><p> email</p>
 	  				</fieldset>
 	  				<br/>

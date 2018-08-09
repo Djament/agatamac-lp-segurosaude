@@ -32,7 +32,7 @@
 		$assunto = '=?UTF-8?B?'.base64_encode($assunto).'?=';
 
 		try {
-		     $mail->Host = 'smtp.DOMÍNIO.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
+		     $mail->Host = 'smtp.DOMINIO.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
 		     $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
 		     $mail->Port       = 587; //  Usar 587 porta SMTP
 		     $mail->Username = 'EMAIL'; // Usuário do servidor SMTP (endereço de email)
@@ -40,22 +40,22 @@
 		 
 		     //Define o remetente
 		     // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=    
-		     $mail->SetFrom('EMAIL', 'Agata Mac'); //Seu e-mail
-		     $mail->AddReplyTo('EMAIL', 'Agata Mac'); //Seu e-mail
+		     $mail->SetFrom('EMAIL', 'Agata Mac - Novo Contato - ' . $nome); //Seu e-mail
+		     $mail->AddReplyTo($email); //Seu e-mail
 		     $mail->Subject = $assunto;//Assunto do e-mail
 		 
 		 
 		     //Define os destinatário(s)
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		     $mail->AddAddress('EMAIL', 'Marcelo Diament');
-		     //$mail->AddAddress('EMAIL', 'Agata Mac');
-		     //$mail->AddAddress('EMAIL');
+		     $mail->AddAddress('EMAIL', 'NOME');
+		     $mail->AddAddress('EMAIL', 'NOME');
+		     //$mail->AddAddress('EMAIL', 'NOME');
 		 
 		     //Campos abaixo são opcionais 
 		     //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		     $mail->AddCC('EMAIL', 'Marcelo Diament'); // Copia
 		     //$mail->AddCC('EMAIL', 'NOME'); // Copia
-		     //$mail->AddBCC('EMAIL', 'NOME'); // Cópia Oculta
+		     $mail->AddCC('EMAIL', 'NOME'); // Copia
+		     $mail->AddBCC('EMAIL', 'NOME'); // Cópia Oculta
 		     //$mail->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 		 
 		 	$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
@@ -149,7 +149,7 @@
 	<meta name="author" content="Djament Comunicação">
 	<meta name="description" content="Agata Mac - Soluções em Planos de Saúde e Seguro de Saúde para Empresas | Seguro de Saúde Empresarial, Planos de Seguro Saúde Corporativo (PJ) | Consultoria e Assessoria para Empresas e departamentos de RH">
 	<meta name="keywords" content="plano de saúde para empresa, seguro de saúde para empresa, seguro saúde pj, plano de saúde corporativo, seguros para empresa, consultoria em seguros">
-	<meta name="robots" content="index,follow">
+	<meta name="robots" content="noindex,nofollow">
 	<meta name="theme-color" content="#0085c4">
 	<meta name="reply-to" content="contato@agatamacsaude.com.br">
 	<link defer ="defer" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">

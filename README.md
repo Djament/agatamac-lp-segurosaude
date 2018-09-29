@@ -1,6 +1,6 @@
-# [![Djament](https://djament.com.br/assets/img/logo-20x20.png)](https://djament.com.br) Agata Mac | Landing Page
+# [![Djament](https://djament.com.br/favicons/favicon-32x32.png)](https://djament.com.br) Agata Mac | Landing Page
 ___
-###### Desenvolvido por [Djament Comunicação] | [Marcelo Diament] em Agosto de 018
+###### Desenvolvido por [Djament Comunicação] | [Marcelo Diament] em Agosto de 2018
 ###### Versão: 0.0.1 | [ver site] | [ver repositório]
 
 ### // Apresentação
